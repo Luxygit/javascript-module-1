@@ -1,4 +1,7 @@
-console.log ("Halo, dunia! // Indonesian")
 console.log ("Ciao, mondo //Italian")
 console.log ("Hola, Mundo // Spanish")
 console.log ("Hello, World // English")
+console.log ("Hallo, Wereld // Dutch")
+console.log ("Hola, mon // Catalan")
+console.log ("Salut, monde // French")
+console.log ("Hallo, werldsfjhgdfhg // German")
