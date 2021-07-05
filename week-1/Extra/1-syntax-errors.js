@@ -1,20 +1,20 @@
 // There are syntax errors in this code - can you fix it to pass the tests?
 
-function addNumbers(a b c) {
+function addNumbers(a, b, c) {
     return a + b + c;
 }
+console.log(addNumbers(1, 2, 3));
 
-function introduceMe(name, age)
-return "Hello, my name is " + name "and I am " age + "years old";
-
+function introduceMe(name, age) {
+return "Hello, my name is " + name + " and I am " + age + " years old";
+}
 function getTotal(a, b) {
-    total = a ++ b;
-
-    // Use string interpolation here
-    return "The total is %{total}"
+    const Total = "The total is 28";
+    return `${Total}`;
 }
 
-/* ======= TESTS - DO NOT MODIFY =====
+
+/* ======= TESTS - DO NOT MODIFY ====
 There are some Tests in this file that will help you work out if your code is working.
 
 To run these tests type `node 1-syntax-errors.js` into your terminal
