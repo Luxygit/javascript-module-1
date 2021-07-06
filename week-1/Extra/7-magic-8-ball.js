@@ -48,9 +48,9 @@ Very doubtful.
 function shakeBall(answervalue) {
   const answerlog = "The ball has shaken!";
   const answervalue = Math.floor(Math.random(4));
-  return shakeBall();  
+  return answerlog + shakeBall();  
 }
-console.log(answerlog);
+
 
 // This function should say whether the answer it is given is
 // - very positive
@@ -59,7 +59,7 @@ console.log(answerlog);
 // - very negative
 // This function should expect to be called with any value which was returned by the shakeBall function.
 function checkAnswer(answervalue) {
-  
+
   if (answervalue === 1) {
     return "It is certain";  
   }

@@ -9,3 +9,4 @@ function numberChecker(num) { //  definining function name and parameter //
     return `${num} isn't even a number :(`;    //  sends yet another message // 
   }
 }
+console.log(numberChecker("meow"));
