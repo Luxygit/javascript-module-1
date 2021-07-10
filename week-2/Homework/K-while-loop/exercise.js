@@ -8,12 +8,12 @@
 
 let n = 10;
 
-function sumTillNum(num){
+function sumTillNum(n){
 	let result = 0;
-	while(num > 0) {
-		result += num;
-		num -= 1;
-		return result;
+	while(n > 0) {
+		result += n;
+		n -= 1;
+		return result + n;
 	}
 }
 
