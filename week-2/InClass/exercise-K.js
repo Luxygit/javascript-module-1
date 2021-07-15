@@ -1,13 +1,9 @@
-const students = [
-  "Mamadou",
-  "Diego",
-  "Said",
-  "Tom",
-  "Beau",];
+const students = ["Mamadou", "Diego", "Said", "Tom", "Beau"];
 
-  for (let i = 0; i < students.length; i++) {
-      function print(students) {
-          return students[i];
+  
+function print(array) {
+        for (let i = 0; i <= students.length; i++) {
+        console.log(print(array[i]));
         }
-        console.log(print(students));
   } 
+ print(students);

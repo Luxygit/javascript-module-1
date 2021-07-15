@@ -6,15 +6,15 @@
 
 */
 
-let n = 10;
+let n = 2;
 
-function sumTillNum(n){
-	let result = 0;
-	while(n > 0) {
-		result += n;
-		n -= 1;
-		return result + n;
+function sumTillNum(num){
+	let sum = 0;
+	while(sum < num) {
+		sum += 1;		
 	}
+	return sum + num;
+
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
