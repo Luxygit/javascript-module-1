@@ -8,8 +8,9 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
+function colonisers(array) {
+  let filteredFam = array.filter(lastNameA => lastNameA[0] == "A" && lastNameA.includes("family"));
+  return filteredFam;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

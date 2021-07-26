@@ -24,7 +24,45 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 function validatePasswords(passwords) {
 
+  const longerThan5 = (password) => password.length >= 5;
+
+  const upperCase = (passwordArray) => 
+  passwordArray.some( 
+    (char) => char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90
+  );
+
+  const lowerCase = (passwordArray) => 
+  passwordArray.some( (char) => char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122
+  );
+
+  const withNumbers = (passwordArray) => 
+  passwordArray.some( (char) => char.charCodeAt(0) >= 48 && char.charCodeAt(0) <= 57 
+  );
+
+  const withSymbols = (passwordArray) => 
+  passwordArray.some(
+    (char) =>  
+    char.charCodeAt(0) === 33 ||
+    char.charCodeAt(0) === 35 ||
+    char.charCodeAt(0) === 36 ||
+    char.charCodeAt(0) === 37 ||
+    char.charCodeAt(0) === 42 ||
+    char.charCodeAt(0) === 38 ||
+    char.charCodeAt(0) === 46
+  );
+
+  passwords.map((password) => {
+   const splitpass = password.split('');
+
+  return longerThan5(array) && 
+  upperCase(splitpass) &&
+  lowerCase(splitpass) &&
+  withNumbers(splitpass) &&
+  withSymbols(splitpass);
+} );
 }
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
